@@ -18,8 +18,8 @@ h2 {
 }
 
 h3 {
- font-family: "Amatic SC", cursive;
-  font-size: 33px; 
+  font-family: "Amatic SC", cursive;
+  font-size: 33px;
 }
 
 h4 {
@@ -37,19 +37,33 @@ h6 {
   font-size: 18px;
 }
 
+
 hr {
   height: 1px;
   background: black;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 ul {
-  margin-bottom: 0px;
+  margin: 0%;
 }
 
 li {
-  line-height: 35px
+  line-height: 35px;
+  list-style: none;
+  margin: 0%;
+}
+
+a {
+  color: darkblue ;
+  text-decoration: none;
+}
+
+a:hover {
+color: darkgoldenrod ;
+}
+
+footer {
+  background-color: #F8F9FA;
 }
 
 .skyline {
@@ -76,33 +90,25 @@ li {
 }
 
 .section-introduction {
-   font-family: "Dosis", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
   text-align: justify;
 }
 
 .culture-wrapper {
   background-color: #f2b1b7;
-  
-  
 }
 
 .cuisine-wrapper {
   background-color: #f18667;
-  
- 
 }
 
 .nightlife-wrapper {
   background-color: #fde560;
-  
- 
 }
 
 .outdoor-wrapper {
   background-color: #95c11f;
-
-  
 }
 
 .underline {
@@ -114,7 +120,17 @@ li {
   width: 1;
 }
 
+.position {
+  
+}
 
+.outdoor-li{
+  color: #95c11f;
+}
+
+.outdoor-li:hover {
+  color: #f18667;
+}
 
 @media (min-width: 600px) {
   .skyline {
@@ -126,11 +142,17 @@ li {
   h4 {
     font-size: 30px;
   }
-  .introduction {
+li {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+  .introduction, .section-introduction,.we-introduction {
     font-size: 16px;
   }
-  .culture-wrapper, .cuisine-wrapper, .nightlife-wrapper, .outdoor-wrapper {
+  .culture-wrapper,
+  .cuisine-wrapper,
+  .nightlife-wrapper,
+  .outdoor-wrapper {
     column-count: 3;
-  
   }
 }
